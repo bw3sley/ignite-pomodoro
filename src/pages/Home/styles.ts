@@ -5,39 +5,39 @@ export const HomeContainer = styled.main`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5.6rem;
+    gap: 3.5rem;
   }
 `
 
-export const BaseCountdownButton = styled.button`
+const BaseCountdownButton = styled.button`
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
 
   border: 0;
   border-radius: 8px;
 
-  padding: 1.6rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 
   font-weight: bold;
 
-  color: ${(props) => props.theme['gray-100']};
-
   cursor: pointer;
 
+  color: ${(props) => props.theme['gray-100']};
+
   &:disabled {
-    opacity: 0.7;
     cursor: not-allowed;
+    opacity: 0.7;
   }
 `
 

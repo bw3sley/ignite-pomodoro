@@ -1,35 +1,30 @@
 import styled from 'styled-components'
 
 export const CountdownContainer = styled.div`
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10rem;
+  line-height: 8rem;
+
   color: ${(props) => props.theme['gray-100']};
 
-  line-height: 12.8rem;
-
   display: flex;
-  gap: 1.6rem;
+  gap: 1rem;
 
   span {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16rem;
-    line-height: 12.8rem;
+    background-color: ${(props) => props.theme['gray-700']};
 
-    padding: 3.2rem 1.6rem;
+    padding: 2rem 1rem;
 
     border-radius: 8px;
-
-    background-color: ${(props) => props.theme['gray-700']};
   }
 `
 
-export const Separator = styled.div`
-  padding: 3.2rem 0;
+export const Separator = styled.span`
+  padding: 2rem 1rem;
 
   color: ${(props) => props.theme['green-500']};
 
-  width: 6.4rem;
-
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16rem;
+  width: 4rem;
 
   overflow: hidden;
 
